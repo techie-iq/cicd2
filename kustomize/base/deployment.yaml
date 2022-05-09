@@ -18,7 +18,7 @@ spec:
       containers:
         - name: cicd
           image: techieiq/cicd
-          imagePullPolicy: IfNotPresent
+          imagePullPolicy: Always
       restartPolicy: Always
   selector:
     matchLabels:
