@@ -1,25 +1,25 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: cicd
+  name: cicd2
   namespace: staging-system
   labels:
-    app: cicd
+    app: cicd2
 spec:
   replicas: 1
   template:
     metadata:
-      name: cicd
+      name: cicd2
       labels:
-        app: cicd
+        app: cicd2
     spec:
       imagePullSecrets:
         - name: dockersecret
       containers:
         - name: cicd2
-          image: techieiq/cicd
+          image: techieiq/cicd2
           imagePullPolicy: Always
       restartPolicy: Always
   selector:
     matchLabels:
-      app: cicd
+      app: cicd2

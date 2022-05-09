@@ -1,9 +1,9 @@
 apiVersion: networking.istio.io/v1alpha3
 kind: DestinationRule
 metadata:
-  name: cicd
+  name: cicd2
 spec:
-  host: cicd
+  host: cicd2
   subsets:
     - name: v1
       labels:

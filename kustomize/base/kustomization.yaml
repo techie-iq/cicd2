@@ -8,6 +8,6 @@ resources:
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 images:
-- name: cicd
+- name: cicd2
   newName: techieiq/cicd2
   newTag: 499103ede7605528c792846669d58f489d4e7c07
