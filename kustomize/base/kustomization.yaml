@@ -10,4 +10,4 @@ kind: Kustomization
 images:
 - name: endpoint
   newName: techieiq/endpoint
-  newTag: ""
+  newTag: cfd6572b9e613dfb602762489dd833f8b1728ed3
