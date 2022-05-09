@@ -29,5 +29,6 @@ class Controller {
 }
 
 fun callColor(): Mono<String> {
+    print("Calling the color service")
     return client.get().uri("/api/color").retrieve().bodyToMono(String::class.java)
 }
