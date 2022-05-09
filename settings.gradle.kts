@@ -1,1 +1,1 @@
-rootProject.name = "cicd"
+rootProject.name = "endpoint"

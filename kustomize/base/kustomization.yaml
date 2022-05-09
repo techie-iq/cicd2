@@ -1,5 +1,5 @@
 commonLabels:
-  app: cicd2
+  app: endpoint
 resources:
 - deployment.yaml
 - service.yaml
@@ -8,6 +8,6 @@ resources:
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 images:
-- name: cicd2
-  newName: techieiq/cicd2
-  newTag: d3997a3263c91c1a101b933d98efa9e3ae3431ba
+- name: endpoint
+  newName: techieiq/endpoint
+  newTag: ""

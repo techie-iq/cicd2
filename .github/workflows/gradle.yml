@@ -63,14 +63,14 @@ jobs:
           IMAGE_REPO: ${{ github.event.repository.name }}
         run: |
           cd kustomize/base
-          kustomize edit set image cicd2=$DOCKERHUB_USERNAME/$IMAGE_REPO:$GITHUB_SHA
+          kustomize edit set image endpoint=$DOCKERHUB_USERNAME/$IMAGE_REPO:$GITHUB_SHA
           cat kustomization.yaml
 
       - name: Commit files
         run: |
           git config --local user.email "ali.yusha@hotmail.com"
           git config --local user.name "GitHub Action"
-          git commit -am "Bump docker tag"
+          git commit -am "Bump docker tag cid2"
 
       - name: Push changes
         uses: ad-m/github-push-action@master

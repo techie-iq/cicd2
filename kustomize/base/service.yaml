@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: cicd2-service
+  name: endpoint-service
   namespace: staging-system
 spec:
   selector:
-    app: cicd2
+    app: endpoint
   ports:
     - port: 8080
   type: ClusterIP

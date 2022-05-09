@@ -1,4 +1,4 @@
-package com.techieiq.learn.cicd
+package com.techieiq.learn.endpoint
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest
