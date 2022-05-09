@@ -1,5 +1,5 @@
 commonLabels:
-  app: cicd
+  app: cicd2
 resources:
 - deployment.yaml
 - service.yaml
