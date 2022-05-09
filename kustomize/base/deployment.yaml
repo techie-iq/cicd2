@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cicd
+  labels:
+    app: cicd
+spec:
+  replicas: 1
+  template:
+    metadata:
+      name: cicd
+      labels:
+        app: cicd
+    spec:
+      imagePullSecrets:
+        - name: dockersecret
+      containers:
+        - name: cicd
+          image: techieiq/cicd
+          imagePullPolicy: IfNotPresent
+      restartPolicy: Always
+  selector:
+    matchLabels:
+      app: cicd
