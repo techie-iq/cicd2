@@ -3,9 +3,11 @@ commonLabels:
 resources:
 - deployment.yaml
 - service.yaml
+- destination-rule.yaml
+- virtual-svc.yaml
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 images:
 - name: cicd
   newName: techieiq/cicd
-  newTag: c424a8797ed421c88ef55b675dc374848130d031
+  newTag: ""
