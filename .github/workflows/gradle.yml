@@ -63,7 +63,7 @@ jobs:
           IMAGE_REPO: ${{ github.event.repository.name }}
         run: |
           cd kustomize/base
-          kustomize edit set image cicd=$DOCKERHUB_USERNAME/$IMAGE_REPO:$GITHUB_SHA
+          kustomize edit set image cicd2=$DOCKERHUB_USERNAME/$IMAGE_REPO:$GITHUB_SHA
           cat kustomization.yaml
 
       - name: Commit files
