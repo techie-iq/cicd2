@@ -10,4 +10,4 @@ kind: Kustomization
 images:
 - name: cicd2
   newName: techieiq/cicd2
-  newTag: 91dbffc60316b349741e5ee8ee904b89fcc07e86
+  newTag: 36df5626d5926cadc5b7438c4c66942c14f9f934
