@@ -16,7 +16,7 @@ spec:
       imagePullSecrets:
         - name: dockersecret
       containers:
-        - name: cicd
+        - name: cicd2
           image: techieiq/cicd
           imagePullPolicy: Always
       restartPolicy: Always
